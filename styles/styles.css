@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  color: #060A24;
+  background-color: #fff;
+  font-weight: 400;
+}
+
+h1, h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2.571rem;
+  padding: 1rem 0rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.714rem;
+  font-weight: 600;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  padding: 1rem;
+}
+
+header #menuToggle {
+  display: block;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+}
+
+header #menuToggle #menu {
+  opacity: 0;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100vw;
+  margin-left: 1.28rem;
+  background: #0000EC;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  padding: 1rem 0rem;
+}
+
+header #menuToggle #menu li {
+  list-style: none;
+  padding: 15px 10px 10px 30px;
+  font-size: 1.143rem;
+}
+
+header #menuToggle #menu a {
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  font-size: 1.143rem;
+  color: #fff;
+}
+
+header #menuToggle #menu a:hover {
+  color: #00F3BB;
+  text-decoration: line-through;
+}
+
+header #menuToggle #menu a:active {
+  color: rgba(6, 10, 36, 0.56);
+  text-decoration: line-through;
+}
+
+header input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+header .hamburger {
+  width: 18px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  margin: 3px 0px;
+  border-radius: 2px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+header .hamburger:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+header .hamburger:last-child {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+header input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(2px, -1px);
+          transform: rotate(45deg) translate(2px, -1px);
+}
+
+header input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+header input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(2px, -1px);
+          transform: rotate(-45deg) translate(2px, -1px);
+}
+
+header #menuToggle input:checked ~ #menu {
+  opacity: 1;
+}
+
+main h1 {
+  font-size: 2.571rem;
+  line-height: 3rem;
+}
+
+main h1 #tachar {
+  text-decoration: line-through;
+}
+
+main h2 {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.571rem;
+  padding: 1.5rem 0;
+}
+
+.btn {
+  display: block;
+  margin: 2rem auto;
+  background-color: #00F3BB;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.143rem;
+  line-height: 1.571rem;
+  font-weight: 500;
+  width: 20.571rem;
+  height: 3.429rem;
+  border-style: none;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.btn:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+.container {
+  margin: 1rem 1rem;
+}
+
+.episodios {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+          clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+  padding: 5rem 0 7.5rem 0;
+}
+
+.episodios h3 {
+  color: #fff;
+}
+
+.episodios iframe {
+  width: 97%;
+  height: 180px;
+  margin: 2%;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery div {
+  width: 100%;
+  height: auto;
+}
+
+.gallery div img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.temas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.temas div {
+  width: 100%;
+  text-align: center;
+  margin: 1.4rem auto;
+}
+
+.relative {
+  position: relative;
+  top: -8rem;
+}
+
+.history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.history div {
+  width: 100%;
+  height: auto;
+}
+
+.history div img {
+  width: 100%;
+  height: auto;
+}
+
+.novedades {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 5rem 0 5rem 0;
+}
+
+.novedades h3 {
+  color: #fff;
+  text-align: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0 0 0;
+  position: relative;
+  top: -5rem;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+footer .icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.143rem;
+}
+
+footer .icons a {
+  text-decoration: none;
+  color: #060A24;
+}
+
+footer .icons i {
+  padding: 0 1.25rem;
+}
+/*# sourceMappingURL=styles.css.map */

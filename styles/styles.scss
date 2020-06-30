@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import 'partials/variables';
+
+html{
+    font-size: 14px;
+}
+body{
+    font-family: $secondaryFont;
+    color: $textColor;
+    background-color: $backgroundColor;
+    font-weight: 400;
+}
+h1,h3{
+    font-family: $primaryFont;
+    font-size: 2.571rem;
+    padding: 1rem 0rem;    
+}
+h2 {
+    font-size: 1rem;
+}
+h4{
+    font-family: $primaryFont;
+    font-size: 1.714rem;
+    font-weight: 600;
+}
+
+@import 'partials/nav';
+@import 'partials/main';
+@import'partials/footer';
+

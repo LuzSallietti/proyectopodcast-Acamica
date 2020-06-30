@@ -1,0 +1,103 @@
+main{
+    h1{
+        font-size: 2.571rem;
+        line-height: 3rem;
+        #tachar{
+            text-decoration: line-through;            
+        }                      
+    }
+    h2{
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.571rem;
+        padding: 1.5rem 0;
+    }
+}
+.btn{
+    display: block;
+    margin: 2rem auto;
+    background-color: $buttonColor;
+    cursor: pointer;
+    font-family: $secondaryFont;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.143rem;
+    line-height: 1.571rem;
+    font-weight: 500;
+    width: 20.571rem;
+    height: 3.429rem;
+    border-style: none;
+    transition: all 1s ease 0s;    
+    &:hover{        
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    }    
+}
+.container{
+    margin: 1rem 1rem;
+}
+.episodios{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+    padding: 5rem 0 7.5rem 0;
+    h3{
+        color: $backgroundColor;
+        
+    }
+    iframe{
+        width: 97%;
+        height: 180px;
+        margin: 2%;
+    
+    }
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+        width: 100%;
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }        
+    }   
+}
+.temas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+        width: 100%;
+        text-align: center;
+        margin:1.4rem auto;
+    }
+}
+.relative{
+    position: relative;
+    top:-8rem;
+}
+.history{
+    display: flex;
+    flex-direction: column;
+    
+    div{
+        width: 100%;
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.novedades{
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+        padding: 5rem 0 5rem 0;
+        h3{
+            color: $backgroundColor;
+            text-align: center;
+            
+        }
+}
