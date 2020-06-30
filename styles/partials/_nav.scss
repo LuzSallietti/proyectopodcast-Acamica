@@ -14,19 +14,18 @@ header {
             opacity: 0;            
             position: absolute;
             top:25px;
-            right: 0;    
+            right: -1rem;               
             display: flex;
             flex-direction: column;
             align-items: flex-start;            
-            width: 100vw;
-            margin-left: 1.28rem;   
+            width: 100vw; 
             background: $menuColor;
             transform-origin: 0% 0%;                          
             transition: opacity 0.5s ease;
             padding: 1rem 0rem;
                 li {
                     list-style: none;
-                    padding: 15px 10px 10px 30px;
+                    padding: 15px 10px 10px 15px;
                     font-size: 1.143rem;
                 }            
                             

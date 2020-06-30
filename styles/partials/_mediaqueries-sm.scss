@@ -1,0 +1,46 @@
+@media (min-width:567px){
+    .episodios{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        h3{
+            width:100%;
+        }
+        iframe {
+            margin: 0.5rem 1rem;
+            width: 45%;
+            display: block;
+        }
+    }
+    .history div {
+        width: 50%;
+        height: auto;
+        align-self: center;        
+    }
+    .history .column{
+        width: 100%;
+        
+    }
+    .gallery{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        h3{
+            width: 100%;
+        }
+        div{
+            width: 49.8%;
+            height: auto;
+        
+        }    
+    }
+    .temas{
+        flex-direction: row;
+        flex-wrap: wrap;
+        div{
+            width: 49%
+        }
+    }
+}

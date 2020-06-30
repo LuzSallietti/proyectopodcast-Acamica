@@ -32,6 +32,10 @@ h4 {
   font-weight: 600;
 }
 
+p {
+  padding: 0.5rem 0;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,7 +68,7 @@ header #menuToggle #menu {
   opacity: 0;
   position: absolute;
   top: 25px;
-  right: 0;
+  right: -1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +80,6 @@ header #menuToggle #menu {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100vw;
-  margin-left: 1.28rem;
   background: #0000EC;
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
@@ -87,7 +90,7 @@ header #menuToggle #menu {
 
 header #menuToggle #menu li {
   list-style: none;
-  padding: 15px 10px 10px 30px;
+  padding: 15px 10px 10px 15px;
   font-size: 1.143rem;
 }
 
@@ -221,9 +224,9 @@ main h2 {
 }
 
 .episodios iframe {
+  margin: 0.5rem auto;
   width: 97%;
-  height: 180px;
-  margin: 2%;
+  display: block;
 }
 
 .gallery {
@@ -274,6 +277,11 @@ main h2 {
   top: -8rem;
 }
 
+.align-left {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 .history {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,6 +300,10 @@ main h2 {
 .history div img {
   width: 100%;
   height: auto;
+}
+
+.history div .column {
+  width: 100%;
 }
 
 .novedades {
@@ -350,5 +362,94 @@ footer .icons a {
 
 footer .icons i {
   padding: 0 1.25rem;
+}
+
+@media (min-width: 567px) {
+  .episodios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .episodios h3 {
+    width: 100%;
+  }
+  .episodios iframe {
+    margin: 0.5rem 1rem;
+    width: 45%;
+    display: block;
+  }
+  .history div {
+    width: 50%;
+    height: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .history .column {
+    width: 100%;
+  }
+  .gallery {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .gallery h3 {
+    width: 100%;
+  }
+  .gallery div {
+    width: 49.8%;
+    height: auto;
+  }
+  .temas {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .temas div {
+    width: 49%;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  .history {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .history div {
+    width: 48%;
+    height: auto;
+  }
+  .history .column {
+    width: 48%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
