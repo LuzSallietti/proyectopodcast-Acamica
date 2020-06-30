@@ -50,7 +50,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
   padding: 1rem;
 }
 
@@ -115,9 +114,10 @@ header #menuToggle #menu a:active {
 
 header input {
   display: block;
-  width: 40px;
+  width: 35px;
   height: 32px;
   position: absolute;
+  right: 0;
   cursor: pointer;
   opacity: 0;
   z-index: 2;
@@ -450,6 +450,15 @@ footer .icons i {
   }
   .history .column {
     width: 48%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+  .container {
+    margin: 1rem 6.25rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
