@@ -2,6 +2,55 @@
     html{
         font-size: 15px;
     }
+    header{
+        padding: 0.5rem 2rem 1rem 2rem;
+        
+    nav{
+        width:auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        
+        
+    #menuToggle {
+        
+        
+        input {
+            display: none;
+        
+        }
+        .hamburger{
+            display: none;
+            
+        }
+        #menu {
+            opacity: 1;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: transparent;
+            position: relative;
+            top:0;
+            left: 0;
+            width: 100%;
+            padding: 0rem;
+           
+            li{
+                list-style: none;
+                padding: 2rem 1rem;
+                
+            }
+            a{
+                color: $textColor;
+             }
+            }
+        }
+    }
+    }
     .history{
         display: flex;
         flex-direction: row;
@@ -17,6 +66,9 @@
         }                 
             
         }
+    .relative{
+        margin-bottom: -8rem;
+    }
         
         
     }

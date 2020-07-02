@@ -2,7 +2,95 @@
     html{
         font-size: 16px;
     }
-    .container{
-        margin: 1rem 6.25rem;
+    body{
+        margin-bottom: -11rem;
     }
+    h3{
+        font-size: 3rem;
+    }
+    h4{
+        font-size: 1.688rem;
+    }
+    header {
+        padding: 2rem 6.25rem 8.75rem 6.25rem;
+        nav{
+            #menuToggle{
+                #menu{                    
+                        li{
+                            padding: 0 1.5rem;
+                            font-size: 1rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .container{
+        margin: 1rem 12.5rem;
+    }
+    
+    .call-to-action{
+        h1{
+            font-size: 4rem;
+            #punto{
+                color:$menuColor;
+            }
+        }
+        h2{
+            width: 50%;
+            padding-bottom: 2rem;
+            padding-top: 0rem;
+        }
+        .btn{
+            margin:2rem 0rem 2rem 0rem;
+        }
+    }
+    .episodios{
+        clip-path: polygon(0 12%, 100% 0%, 100% 88%, 0% 100%);
+        justify-content: center;
+        padding: 5rem 0 10rem 0;
+         iframe {
+                margin: 0.5rem 2rem;
+                width: 40%;
+                height: 232px;
+                display: block;
+            }
+        }
+    .relative{
+        top:-11rem;
+        margin-bottom: -11rem;
+    
+    }
+    .gallery{
+        div{
+            width: 33.33%;
+        }
+    }
+    .temas{
+        h3{
+            width: 100%;
+        }
+        div{
+            width: 25%;
+        }
+    }
+    .novedades{
+        clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+        padding: 5rem 0 8rem 0;
+    }
+    footer{
+        flex-direction: row;
+        align-items: center;
+        padding: 1.5rem 6.25rem 1.5rem 6.25rem;
+        justify-content: space-between;
+        p{
+            width: 50%;
+            text-align: left;
+        }
+        .icons {
+            width: 50%;
+            justify-content: flex-end;
+        }
+    }
+    
 }

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 400;
 }
 @import 'partials/variables';
 
@@ -12,7 +13,8 @@ body{
     font-family: $secondaryFont;
     color: $textColor;
     background-color: $backgroundColor;
-    font-weight: 400;
+      
+    
 }
 h1,h3{
     font-family: $primaryFont;
@@ -29,7 +31,7 @@ h4{
     font-weight: 600;
 }
 p{
-    padding: 0.5rem 0;
+    padding: 0.5rem 0rem;
 }
 @import 'partials/nav';
 @import 'partials/main';

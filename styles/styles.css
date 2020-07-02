@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-weight: 400;
 }
 
 html {
@@ -13,7 +14,6 @@ body {
   font-family: "IBM Plex Mono", monospace;
   color: #060A24;
   background-color: #fff;
-  font-weight: 400;
 }
 
 h1, h3 {
@@ -33,7 +33,7 @@ h4 {
 }
 
 p {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0rem;
 }
 
 header {
@@ -188,7 +188,7 @@ main h2 {
 
 .btn {
   display: block;
-  margin: 2rem auto;
+  margin: 2rem 0 2rem 0;
   background-color: #00F3BB;
   cursor: pointer;
   font-family: "IBM Plex Mono", monospace;
@@ -212,11 +212,15 @@ main h2 {
   margin: 1rem 1rem;
 }
 
+.call-to-action h1 {
+  width: 80%;
+}
+
 .episodios {
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
           clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
-  padding: 5rem 0 7.5rem 0;
+  padding: 4rem 0 7.5rem 0;
 }
 
 .episodios h3 {
@@ -266,6 +270,10 @@ main h2 {
           align-items: center;
 }
 
+.temas h3 {
+  width: 100%;
+}
+
 .temas div {
   width: 100%;
   text-align: center;
@@ -275,6 +283,7 @@ main h2 {
 .relative {
   position: relative;
   top: -8rem;
+  margin-bottom: -8rem;
 }
 
 .align-left {
@@ -329,9 +338,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 0 0 0;
-  position: relative;
-  top: -5rem;
 }
 
 footer p {
@@ -365,6 +371,15 @@ footer .icons i {
 }
 
 @media (min-width: 567px) {
+  header {
+    padding: 1rem 3rem;
+  }
+  header nav #menuToggle #menu {
+    right: -3rem;
+  }
+  .container {
+    margin: 1rem 3rem;
+  }
   .episodios {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -396,6 +411,9 @@ footer .icons i {
   }
   .history .column {
     width: 100%;
+  }
+  .relative {
+    margin-bottom: -8rem;
   }
   .gallery {
     -webkit-box-orient: horizontal;
@@ -429,11 +447,72 @@ footer .icons i {
   .temas div {
     width: 49%;
   }
+  .novedades .btn {
+    margin: 2rem auto;
+  }
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 15px;
+  }
+  header {
+    padding: 0.5rem 2rem 1rem 2rem;
+  }
+  header nav {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav #menuToggle input {
+    display: none;
+  }
+  header nav #menuToggle .hamburger {
+    display: none;
+  }
+  header nav #menuToggle #menu {
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0rem;
+  }
+  header nav #menuToggle #menu li {
+    list-style: none;
+    padding: 2rem 1rem;
+  }
+  header nav #menuToggle #menu a {
+    color: #060A24;
   }
   .history {
     display: -webkit-box;
@@ -451,14 +530,102 @@ footer .icons i {
   .history .column {
     width: 48%;
   }
+  .relative {
+    margin-bottom: -8rem;
+  }
 }
 
 @media (min-width: 1200px) {
   html {
     font-size: 16px;
   }
+  body {
+    margin-bottom: -11rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 1.688rem;
+  }
+  header {
+    padding: 2rem 6.25rem 8.75rem 6.25rem;
+  }
+  header nav #menuToggle #menu li {
+    padding: 0 1.5rem;
+    font-size: 1rem;
+  }
   .container {
-    margin: 1rem 6.25rem;
+    margin: 1rem 12.5rem;
+  }
+  .call-to-action h1 {
+    font-size: 4rem;
+  }
+  .call-to-action h1 #punto {
+    color: #0000EC;
+  }
+  .call-to-action h2 {
+    width: 50%;
+    padding-bottom: 2rem;
+    padding-top: 0rem;
+  }
+  .call-to-action .btn {
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  .episodios {
+    -webkit-clip-path: polygon(0 12%, 100% 0%, 100% 88%, 0% 100%);
+            clip-path: polygon(0 12%, 100% 0%, 100% 88%, 0% 100%);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5rem 0 10rem 0;
+  }
+  .episodios iframe {
+    margin: 0.5rem 2rem;
+    width: 40%;
+    height: 232px;
+    display: block;
+  }
+  .relative {
+    top: -11rem;
+    margin-bottom: -11rem;
+  }
+  .gallery div {
+    width: 33.33%;
+  }
+  .temas h3 {
+    width: 100%;
+  }
+  .temas div {
+    width: 25%;
+  }
+  .novedades {
+    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 5rem 0 8rem 0;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.5rem 6.25rem 1.5rem 6.25rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer p {
+    width: 50%;
+    text-align: left;
+  }
+  footer .icons {
+    width: 50%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 /*# sourceMappingURL=styles.css.map */

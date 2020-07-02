@@ -1,4 +1,17 @@
 @media (min-width:567px){
+    header{
+        padding: 1rem 3rem;
+        nav{
+            #menuToggle{
+                #menu{
+                    right: -3rem;
+                }
+            }
+        }
+    }
+    .container{
+        margin: 1rem 3rem;
+    }
     .episodios{
         display: flex;
         flex-direction: row;
@@ -22,6 +35,9 @@
         width: 100%;
         
     }
+    .relative{
+        margin-bottom: -8rem;
+    }
     .gallery{
         flex-direction: row;
         flex-wrap: wrap;
@@ -41,6 +57,11 @@
         flex-wrap: wrap;
         div{
             width: 49%
+        }
+    }
+    .novedades{
+        .btn{
+            margin: 2rem auto;
         }
     }
 }
