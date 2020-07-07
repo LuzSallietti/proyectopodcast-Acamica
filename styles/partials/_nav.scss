@@ -4,6 +4,10 @@ header {
     justify-content: space-between;
     align-items: center;    
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 999;
     #menuToggle {
         display: block;
         z-index: 1;

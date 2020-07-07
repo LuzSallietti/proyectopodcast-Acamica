@@ -51,6 +51,11 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
 }
 
 header #menuToggle {
@@ -439,7 +444,7 @@ footer .icons i {
     width: 100%;
   }
   .gallery div {
-    width: 49.8%;
+    width: 50%;
     height: auto;
   }
   .temas {
@@ -594,7 +599,7 @@ footer .icons i {
     margin-bottom: -11rem;
   }
   .gallery div {
-    width: 33.33%;
+    width: 33.333%;
   }
   .temas h3 {
     width: 100%;
