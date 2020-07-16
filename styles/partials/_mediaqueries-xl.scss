@@ -12,7 +12,7 @@
         font-size: 1.688rem;
     }
     header {
-        padding: 2rem 6.25rem 8.75rem 6.25rem;
+        padding: 1.65rem 6.25rem 1.65rem 6.25rem;
         nav{
             #menuToggle{
                 #menu{                    
@@ -26,10 +26,11 @@
         }
     }
     .container{
-        margin: 1rem 12.5rem;
+        margin: 1rem 12.5rem 0rem 12.5rem;
     }
     
     .call-to-action{
+        padding-top: 6.5rem;
         h1{
             font-size: 4rem;
             #punto{
@@ -37,18 +38,23 @@
             }
         }
         h2{
-            width: 50%;
-            padding-bottom: 2rem;
+            width: 60%;
+            padding-bottom: 1.5rem;
             padding-top: 0rem;
         }
         .btn{
-            margin:2rem 0rem 2rem 0rem;
+            margin: 2rem 0rem 0rem 0rem;
+            width: 14.125rem;
         }
     }
     .episodios{
-        clip-path: polygon(0 12%, 100% 0%, 100% 88%, 0% 100%);
+        clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
         justify-content: center;
         padding: 5rem 0 10rem 0;
+        h3{
+            padding-top: 4.375rem;
+            padding-bottom: 2rem;
+        }
          iframe {
                 margin: 0.5rem 2rem;
                 width: 40%;
@@ -61,7 +67,15 @@
         margin-bottom: -11rem;
     
     }
+    .column{
+        h3{
+            padding-bottom: 1rem;
+        }
+    }
     .gallery{
+        h3{
+            padding-bottom: 2rem;
+        }
         div{
             width: 33.333%;
         }
@@ -69,14 +83,22 @@
     .temas{
         h3{
             width: 100%;
+            padding: 1rem 0rem 1rem 0rem;
         }
         div{
             width: 25%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
         }
     }
     .novedades{
         clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
-        padding: 5rem 0 8rem 0;
+        padding: 11rem 0 8rem 0;
+        margin-top: 1.25rem;
+        h3{
+            padding-bottom: 0;
+        }
     }
     footer{
         flex-direction: row;

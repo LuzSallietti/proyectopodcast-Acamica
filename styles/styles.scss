@@ -19,7 +19,7 @@ body{
 h1,h3{
     font-family: $primaryFont;
     font-size: 2.571rem;
-    padding: 1rem 0rem;
+   
         
 }
 h2 {
@@ -33,9 +33,23 @@ h4{
 p{
     padding: 0.5rem 0rem;
 }
+.pt-1{
+    padding-top: 1rem;
+}
+.pt-2{
+    padding-top: 2rem;
+}
+.pb-1{
+    padding-bottom: 1rem;
+}
 @import 'partials/nav';
 @import 'partials/main';
 @import'partials/footer';
 @import 'partials/mediaqueries-sm';
 @import 'partials/mediaqueries-md';
 @import 'partials/mediaqueries-xl';
+
+
+
+
+
