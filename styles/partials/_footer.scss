@@ -16,6 +16,9 @@ footer{
         a{
             text-decoration: none;
             color: $textColor;
+            :hover{
+                color: $menuColor;
+            }
         }
         i{
             padding: 0 1.25rem;
