@@ -16,12 +16,13 @@ main{
     }
 }
 .btn{
-    display: block;
+    display: flex;
     margin: 2rem 0 2rem 0;
     background-color: $buttonColor;
     cursor: pointer;
     font-family: $secondaryFont;
-    text-align: center;
+    justify-content: center;
+    align-items: center;    
     text-transform: uppercase;
     font-size: 1.143rem;
     line-height: 1.571rem;
@@ -29,7 +30,9 @@ main{
     width: 20.571rem;
     height: 3.429rem;
     border-style: none;
-    transition: all 1s ease 0s;    
+    text-decoration: none;
+    color: $textColor;
+    transition: 1s ease 0s;    
     &:hover{        
         background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
     }
@@ -52,9 +55,11 @@ main{
         
     }
     iframe{
-        margin: 0.5rem auto;
+        margin: auto;
         width: 97%;
         display: block;
+        height: 180px;
+        border:none;
     }
    
 }

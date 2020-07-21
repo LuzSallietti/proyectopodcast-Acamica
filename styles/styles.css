@@ -202,12 +202,19 @@ main h2 {
 }
 
 .btn {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 2rem 0 2rem 0;
   background-color: #00F3BB;
   cursor: pointer;
   font-family: "IBM Plex Mono", monospace;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   font-size: 1.143rem;
   line-height: 1.571rem;
@@ -215,8 +222,10 @@ main h2 {
   width: 20.571rem;
   height: 3.429rem;
   border-style: none;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  text-decoration: none;
+  color: #060A24;
+  -webkit-transition: 1s ease 0s;
+  transition: 1s ease 0s;
 }
 
 .btn:hover {
@@ -243,9 +252,11 @@ main h2 {
 }
 
 .episodios iframe {
-  margin: 0.5rem auto;
+  margin: auto;
   width: 97%;
   display: block;
+  height: 180px;
+  border: none;
 }
 
 .gallery {
@@ -447,6 +458,7 @@ footer .icons i {
     width: 100%;
   }
   .episodios iframe {
+    height: 180px;
     margin: 0.5rem 1rem;
     width: 45%;
     display: block;
@@ -577,7 +589,7 @@ footer .icons i {
     width: 92%;
   }
   .history .column {
-    width: 45%;
+    width: 50%;
   }
   .relative {
     margin-bottom: -8rem;
@@ -611,13 +623,14 @@ footer .icons i {
     padding-top: 6.5rem;
   }
   .call-to-action h1 {
+    width: 100%;
     font-size: 4rem;
   }
   .call-to-action h1 #punto {
     color: #0000EC;
   }
   .call-to-action h2 {
-    width: 60%;
+    width: 70%;
     padding-bottom: 1.5rem;
     padding-top: 0rem;
   }
@@ -635,10 +648,10 @@ footer .icons i {
   }
   .episodios h3 {
     padding-top: 4.375rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
   .episodios iframe {
-    margin: 0.5rem 2rem;
+    margin-bottom: 4rem;
     width: 40%;
     height: 232px;
     display: block;
@@ -661,14 +674,8 @@ footer .icons i {
     padding: 1rem 0rem 1rem 0rem;
   }
   .temas div {
-    width: 25%;
+    width: 23%;
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .novedades {
     -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
