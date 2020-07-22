@@ -201,6 +201,10 @@ main h2 {
   line-height: 1.571rem;
 }
 
+main .display-desktop {
+  display: none;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -571,6 +575,15 @@ footer .icons i {
   }
   header nav #menuToggle #menu a {
     color: #060A24;
+  }
+  .call-to-action h2 {
+    width: 66%;
+  }
+  .call-to-action .display-mobile {
+    display: none;
+  }
+  .call-to-action .display-desktop {
+    display: block;
   }
   .history {
     display: -webkit-box;

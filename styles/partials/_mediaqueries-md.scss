@@ -51,6 +51,18 @@
         }
     }
     }
+    .call-to-action{
+        h2{
+            width: 66%;
+        }
+    .display-mobile{
+        display: none;
+    }
+    .display-desktop {
+        display: block;
+
+    }
+    }
     .history{
         display: flex;
         flex-direction: row;
